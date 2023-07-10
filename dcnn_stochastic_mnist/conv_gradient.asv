@@ -1,0 +1,36 @@
+function DLDw=conv_gradient(x,DLDy,conv)
+
+batch_size = size(x, 4);
+
+DLDw=zeros(size(conv.weight));
+
+% for inf=1:conv.input_n_feature
+%     for outf=1:conv.output_n_feature
+%         for m=1:conv.output_size
+%             for n=1:conv.output_size
+%                 DLDy_pixel=reshape(DLDy(m,n,outf,:),[],batch_size);
+%                 for i=1:conv.n_kernel
+%                     for j=1:conv.n_kernel
+%                         x_i=(m-1)*conv.n_stride+i;
+%                         x_j=(n-1)*conv.n_stride+j;
+%                         
+%                         x_pixel=reshape(x(x_i,x_j,inf,:),[],batch_size);    
+% 
+%                         DLDw(i,j,inf,outf)=DLDw(i,j,inf,outf)+mean(x_pixel.*DLDy_pixel);
+%                     end
+%                 end
+%             end
+%         end
+%     end
+% end
+
+for inf=1:conv.input_n_feature
+    for outf=1:conv.output_n_feature  
+        for bb=1:batch_size
+            DLDw(:,:,inf,outf)=DLDw(:,:,inf,outf)+convn(x(:,:,inf,bb),rot90(DLDy(:,:,outf,bb),'valid');
+        end
+    end
+end
+DLDw=DLDw/batch_size;
+
+

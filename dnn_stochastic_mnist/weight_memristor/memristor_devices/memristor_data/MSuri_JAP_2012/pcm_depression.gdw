@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDataWorkspace>
+  <version>2.26.0.20</version>
+  <WSversion>10</WSversion>
+  <File>
+    <Name>C:\Users\Wei\Documents\work\restricted_boltzmann_machine\deep_belief_nets\DBN_MNIST_training_memristor\00_non_linear_model_plot\data_from_literatures\MSuri_JAP_2012\pcm_depression.jpg</Name>
+    <Width>865</Width>
+    <Height>740</Height>
+  </File>
+  <Line>
+    <Caption>Line #1</Caption>
+    <LineColor>4,4,4</LineColor>
+    <BkColor>254,254,254</BkColor>
+    <PtColor>220,70,220</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">1183,490,1795,4531,2434,4621,3064,4657,3676,4684,4297,4711,4936,4720,5557,4720,6205,4711,6835,4702</Points>
+    <Points MF="9">7465,4684</Points>
+  </Line>
+  <CurrentLine>0</CurrentLine>
+  <Xmin MF="9">1183,5044,0.000000e+000</Xmin>
+  <Xmax MF="9">7429,5035,1.000000e+001</Xmax>
+  <Ymin MF="9">1183,5053,5.000000e-006</Ymin>
+  <Ymax MF="9">1183,274,5.000000e-003</Ymax>
+  <XScale>linear</XScale>
+  <YScale>logarithmic</YScale>
+  <Position>-131,-7</Position>
+  <Zoom>
+    <Scale>100.0</Scale>
+  </Zoom>
+  <Digitize>
+    <IgnorePixels>1</IgnorePixels>
+    <LineIDMethod>2</LineIDMethod>
+  </Digitize>
+  <AutoTrace>
+    <TraceDistance>8</TraceDistance>
+    <SmoothLines>1</SmoothLines>
+  </AutoTrace>
+  <DigitizeArea>
+    <LineOrArea>0</LineOrArea>
+    <RotateAngle>0.000000</RotateAngle>
+    <dx>8.000000</dx>
+  </DigitizeArea>
+  <GridSettings>
+    <ShowGrid>0</ShowGrid>
+    <AreaType>0</AreaType>
+    <dx>15.000000</dx>
+    <dy>15.000000</dy>
+  </GridSettings>
+</GetDataWorkspace>

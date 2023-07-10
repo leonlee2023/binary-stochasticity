@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDataWorkspace>
+  <version>2.26.0.20</version>
+  <WSversion>10</WSversion>
+  <File>
+    <Name>C:\Users\Wei\Documents\work\restricted_boltzmann_machine\deep_belief_nets\DBN_MNIST_training_memristor\00_non_linear_model_plot\data_from_literatures\jang_edl_2015\synaptic_weight_updates.jpg</Name>
+    <Width>750</Width>
+    <Height>372</Height>
+  </File>
+  <Line>
+    <Caption>Line #1</Caption>
+    <LineColor>3,2,2</LineColor>
+    <BkColor>254,254,254</BkColor>
+    <PtColor>220,70,220</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">1480,2353,1489,2011,1498,1867,1516,1777,1525,1705,1534,1651,1552,1588,1570,1552,1579,1498,1597,1435</Points>
+    <Points MF="9">1624,1363,1669,1309,1696,1282,1723,1228,1777,1183,1831,1147,1876,1084,1930,1057,1993,1030,2029,1003</Points>
+    <Points MF="9">2074,967,2110,949,2155,940,2200,922,2245,904,2290,895,2362,859,2425,841,2470,832,2515,823</Points>
+    <Points MF="9">2587,823,2641,814,2677,796,2731,787,2767,760,2767,1552,2776,1741,2794,1831,2803,1894,2821,1948</Points>
+    <Points MF="9">2839,1993,2884,2047,2920,2083,2956,2110,3001,2137,3037,2155,3082,2164,3109,2182,3163,2200,3208,2218</Points>
+    <Points MF="9">3262,2227,3325,2245,3388,2254,3433,2263,3487,2272,3532,2281,3568,2281,3613,2281,3667,2281,3721,2290</Points>
+    <Points MF="9">3775,2290,3829,2299,3874,2299,3928,2308,3964,2308,4009,2317,4036,2317</Points>
+  </Line>
+  <CurrentLine>0</CurrentLine>
+  <Xmin MF="9">1480,2695,0.000000e+000</Xmin>
+  <Xmax MF="9">4036,2695,2.000000e+002</Xmax>
+  <Ymin MF="9">1165,2695,0.000000e+000</Ymin>
+  <Ymax MF="9">1165,337,2.000000e-007</Ymax>
+  <XScale>linear</XScale>
+  <YScale>linear</YScale>
+  <Position>-234,-43</Position>
+  <Zoom>
+    <Scale>100.0</Scale>
+  </Zoom>
+  <Digitize>
+    <IgnorePixels>1</IgnorePixels>
+    <LineIDMethod>2</LineIDMethod>
+  </Digitize>
+  <AutoTrace>
+    <TraceDistance>8</TraceDistance>
+    <SmoothLines>1</SmoothLines>
+  </AutoTrace>
+  <DigitizeArea>
+    <LineOrArea>0</LineOrArea>
+    <RotateAngle>0.000000</RotateAngle>
+    <dx>8.000000</dx>
+  </DigitizeArea>
+  <GridSettings>
+    <ShowGrid>0</ShowGrid>
+    <AreaType>0</AreaType>
+    <dx>15.000000</dx>
+    <dy>15.000000</dy>
+  </GridSettings>
+</GetDataWorkspace>

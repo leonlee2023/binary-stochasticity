@@ -1,0 +1,10 @@
+function [z,dzdy]= activation(y,samp_type)
+% activation function, and derivative of activation function to its input
+
+    z = 1./(1+exp(-y));
+    dzdy = z.*(1-z);
+
+    z=sampling(z,samp_type); 
+%     dzdy=sampling(dzdy,samp_type);
+
+end
