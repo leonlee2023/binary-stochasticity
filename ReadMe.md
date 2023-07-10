@@ -1,5 +1,6 @@
 This code package is used to simualted the binary stochastic deep neural network.
--- Features of this code pakage:
+
+- Features of this code pakage:
     - Stochastic binarization of the forwarding signals in each layer of a neural network;
     - Stochastic binarization of the activation derivatives in each layer;
     - Sign of backpropagating errors in each layer;
@@ -17,30 +18,40 @@ More detials of this work should be addressed to our Paper titled "Stochasticall
 Developed by Dr. Wei Wang and Dr. Yang Li @ Shenzhen, China. Feb. 2023.
 
 Language: Matlab
+
 Software version: MATLAB R2021b, R2022b.
 
 The code can be run on CPUs but it would be faster if you have Nvidia GPUs that support CUDA.
--- Type "gpuDevice" in Matlab command window to check if you have GPUs available in MATLAB
+
+- Type "gpuDevice" in Matlab command window to check if you have GPUs available in MATLAB
+
     - If an Error pops, then you don't aviable GPUs in MATLAB. 
         You can still run this code but with slower speed.
         If you believe you have Nvidia GPUs that support CUDA you computer, but have this error. You need to install the Nvidia drivers for CUDA (https://developer.nvidia.com/cuda-toolkit). 
+        
     - If it shows "CUDADevice with properties: ....", then you can accelearte this code by the GPUs.
 
 
 To start, you first need to download the MNIST dataset and CIFAR10 dataset, and preprocessing them.
--- MNIST (Website: http://yann.lecun.com/exdb/mnist/)
+
+- MNIST (Website: http://yann.lecun.com/exdb/mnist/)
+
     - You need to download four files: 
-        train-images-idx3-ubyte.gz:  training set images (9912422 bytes)
-        train-labels-idx1-ubyte.gz:  training set labels (28881 bytes)
-        t10k-images-idx3-ubyte.gz:   test set images (1648877 bytes)
-        t10k-labels-idx1-ubyte.gz:   test set labels (4542 bytes)
+    
+        - train-images-idx3-ubyte.gz:  training set images (9912422 bytes)
+      
+        - train-labels-idx1-ubyte.gz:  training set labels (28881 bytes)
+      
+        - t10k-images-idx3-ubyte.gz:   test set images (1648877 bytes)
+      
+        - t10k-labels-idx1-ubyte.gz:   test set labels (4542 bytes)
     
     - Unzip them and copy unziped files to folder: "/dataset/mnist/".
     
     - Browse the working folder of Matlab to the folder "/dataset/mnist/"
         Run the code file "loadMNIST.m", then a "MNIST.mat" file is generated, and some example handwritten digits will be displayed. 
 
--- CIFAR10 (Website: http://www.cs.toronto.edu/~kriz/cifar.html)
+- CIFAR10 (Website: http://www.cs.toronto.edu/~kriz/cifar.html)
     - Download the Matlab version of the dataset: 
         CIFAR-10 Matlab version	175 MB	md5sum: 70270af85842c9e89bb428ec9976c926
 
@@ -49,7 +60,8 @@ To start, you first need to download the MNIST dataset and CIFAR10 dataset, and 
     - Browse the working folder of Matlab to the folder "/dataset/cifar10/"
         Run the code file "loadCIFAR10.m", then a "cifar10.mat" file is generated, and some example images will be displayed. 
 
--- Fully connected neural networks for MNIST dataset
+- Fully connected neural networks for MNIST dataset
+
     - Browse the working folder of Matlab to the folder "/dnn_stochastic_mnist/"
 
     - Run the code file "dnn_fcn_train.m": the neural network training will be started.
@@ -73,7 +85,7 @@ To start, you first need to download the MNIST dataset and CIFAR10 dataset, and 
     - Subfolder "/dnn_stochastic_mnist/weight_integer/"
         The codes for training the neural network using real memristor synaptic behaviors under idential potentiation and depression pulses. 
 
--- Convolutional neural networks for MNIST dataset
+- Convolutional neural networks for MNIST dataset
     - Browse the working folder of Matlab to the folder "/dcnn_stochastic_mnist/"
 
     - Run the code file "dnn_conv_train.m": the neural network training will be started.
@@ -89,7 +101,7 @@ To start, you first need to download the MNIST dataset and CIFAR10 dataset, and 
         "plot_weight_maps.m": plot the weight distribution.
         "train_results_comparison.m": compare training results for different setting or parameters.
 
--- Convolutional neural networks for CIFAR10 dataset
+- Convolutional neural networks for CIFAR10 dataset
     - Browse the working folder of Matlab to the folder "dcnn_stochastic_cifar10/"
 
     - Run the code file "dnn_conv_train_HP.m": the neural network training will be started.
