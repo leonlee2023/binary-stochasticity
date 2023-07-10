@@ -152,3 +152,7 @@ To start, you first need to download the MNIST dataset and CIFAR10 dataset, and 
         "inference.m": test different inference methods.
       
         "train_results_comparison.m": compare training results for different setting or parameters.
+
+  - Reference
+    - Yang Li, et al., "Binary stochasticity enabled highly efficient neuromorphic deep learning achieves better-than-software accuracy", preprint in ArXiv, 
+https://doi.org/10.48550/arXiv.2304.12866
