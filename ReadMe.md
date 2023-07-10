@@ -1,4 +1,6 @@
-This code package is used to simualted the binary stochastic deep neural network.
+# Binary stochasticity enabled highly efficient neuromorphic deep learning
+
+This code package is used to simulate the binary stochastic deep neural network.
 
 - Features of this code pakage:
     - Stochastic binarization of the forwarding signals in each layer of a neural network;
@@ -33,7 +35,7 @@ The code can be run on CPUs but it would be faster if you have Nvidia GPUs that 
         
     - If it shows "CUDADevice with properties: ....", then you can accelearte this code by the GPUs.
 
-
+## Prepare dataset
 To start, you first need to download the MNIST dataset and CIFAR10 dataset, and preprocessing them.
 
 - MNIST (Website: http://yann.lecun.com/exdb/mnist/)
@@ -65,7 +67,7 @@ To start, you first need to download the MNIST dataset and CIFAR10 dataset, and 
       
         Run the code file "loadCIFAR10.m", then a "cifar10.mat" file is generated, and some example images will be displayed. 
 
-- Fully connected neural networks for MNIST dataset
+## Fully connected neural networks for MNIST dataset
 
     - Browse the working folder of Matlab to the folder "/dnn_stochastic_mnist/"
 
@@ -99,7 +101,7 @@ To start, you first need to download the MNIST dataset and CIFAR10 dataset, and 
       
         The codes for training the neural network using real memristor synaptic behaviors under idential potentiation and depression pulses. 
 
-- Convolutional neural networks for MNIST dataset
+## Convolutional neural networks for MNIST dataset
   
     - Browse the working folder of Matlab to the folder "/dcnn_stochastic_mnist/"
 
@@ -123,7 +125,7 @@ To start, you first need to download the MNIST dataset and CIFAR10 dataset, and 
       
         "train_results_comparison.m": compare training results for different setting or parameters.
 
-- Convolutional neural networks for CIFAR10 dataset
+## Convolutional neural networks for CIFAR10 dataset
   
     - Browse the working folder of Matlab to the folder "dcnn_stochastic_cifar10/"
 
@@ -153,6 +155,6 @@ To start, you first need to download the MNIST dataset and CIFAR10 dataset, and 
       
         "train_results_comparison.m": compare training results for different setting or parameters.
 
-  - Reference
-    - Yang Li, et al., "Binary stochasticity enabled highly efficient neuromorphic deep learning achieves better-than-software accuracy", preprint in ArXiv, 
+## Reference
+    1. Yang Li, et al., "Binary stochasticity enabled highly efficient neuromorphic deep learning achieves better-than-software accuracy", preprint in ArXiv, 
 https://doi.org/10.48550/arXiv.2304.12866
