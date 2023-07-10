@@ -69,92 +69,92 @@ To start, you first need to download the MNIST dataset and CIFAR10 dataset, and 
 
 ## Fully connected neural networks for MNIST dataset
 
-    - Browse the working folder of Matlab to the folder "/dnn_stochastic_mnist/"
+- Browse the working folder of Matlab to the folder "/dnn_stochastic_mnist/"
 
-    - Run the code file "dnn_fcn_train.m": the neural network training will be started.
+- Run the code file "dnn_fcn_train.m": the neural network training will be started.
       
-        Key information during the training will be displayed in the command window.
+    Key information during the training will be displayed in the command window.
       
-        After the training finished, the cross-entropy and the recogniton accuracy during the training will be plotted.
+    After the training finished, the cross-entropy and the recogniton accuracy during the training will be plotted.
       
-        Three inference methods will be tested after the training finished: high precision, deterministic binarization, stochastic binarization.
+    Three inference methods will be tested after the training finished: high precision, deterministic binarization, stochastic binarization.
       
-        A ".mat" file will be generated which saves all the variables for the neural network setting, the croo-entropy and test accuracy during training, learned weights. 
+    A ".mat" file will be generated which saves all the variables for the neural network setting, the croo-entropy and test accuracy during training, learned weights. 
     
-    - Change the parameters in the code file "dnn_fcn_train.m", and re-run this file.
+- Change the parameters in the code file "dnn_fcn_train.m", and re-run this file.
       
-        To verify the effect of neural network parameters on its performance.
+    To verify the effect of neural network parameters on its performance.
     
-    - Subfolder "/dnn_stochastic_mnist/activation_logistic_parameter/"
+- Subfolder "/dnn_stochastic_mnist/activation_logistic_parameter/"
       
-        The codes to the loop of different prefactors "a" in the logistic activation function "z=1/(1+exp(-a*y))" under different learning schemes.
+    The codes to the loop of different prefactors "a" in the logistic activation function "z=1/(1+exp(-a*y))" under different learning schemes.
     
-    - Subfolder "/dnn_stochastic_mnist/activation_types/"
+- Subfolder "/dnn_stochastic_mnist/activation_types/"
       
-        The codes to the loop of activation functions and derivatives under different learning schemes.
+    The codes to the loop of activation functions and derivatives under different learning schemes.
 
-    - Subfolder "/dnn_stochastic_mnist/weight_integer/"
+- Subfolder "/dnn_stochastic_mnist/weight_integer/"
       
-        The codes for training the neural network with weights of various types of integers.
+    The codes for training the neural network with weights of various types of integers.
 
-    - Subfolder "/dnn_stochastic_mnist/weight_integer/"
+- Subfolder "/dnn_stochastic_mnist/weight_integer/"
       
-        The codes for training the neural network using real memristor synaptic behaviors under idential potentiation and depression pulses. 
+    The codes for training the neural network using real memristor synaptic behaviors under idential potentiation and depression pulses. 
 
 ## Convolutional neural networks for MNIST dataset
   
-    - Browse the working folder of Matlab to the folder "/dcnn_stochastic_mnist/"
+- Browse the working folder of Matlab to the folder "/dcnn_stochastic_mnist/"
 
-    - Run the code file "dnn_conv_train.m": the neural network training will be started.
+- Run the code file "dnn_conv_train.m": the neural network training will be started.
       
-        Key information during the training will be displayed in the command window.
+    Key information during the training will be displayed in the command window.
       
-        After the training finished, the cross-entropy and the recogniton accuracy during the training will be plotted.
+    After the training finished, the cross-entropy and the recogniton accuracy during the training will be plotted.
       
-        A ".mat" file will be generated which saves all the variables for the neural network setting, the croo-entropy and test accuracy during training, learned weights. 
+    A ".mat" file will be generated which saves all the variables for the neural network setting, the croo-entropy and test accuracy during training, learned weights. 
     
-    - Change the parameters in the code file "dnn_conv_train.m", and re-run this file.
+- Change the parameters in the code file "dnn_conv_train.m", and re-run this file.
       
-        To verify the effect of neural network parameters on its performance.
+    To verify the effect of neural network parameters on its performance.
 
-    - Other code files to post processing the learned neural network:
+- Other code files to post processing the learned neural network:
       
-        "inference.m": test different inference methods.
+    "inference.m": test different inference methods.
       
-        "plot_weight_maps.m": plot the weight distribution.
+    "plot_weight_maps.m": plot the weight distribution.
       
-        "train_results_comparison.m": compare training results for different setting or parameters.
+    "train_results_comparison.m": compare training results for different setting or parameters.
 
 ## Convolutional neural networks for CIFAR10 dataset
   
-    - Browse the working folder of Matlab to the folder "dcnn_stochastic_cifar10/"
+- Browse the working folder of Matlab to the folder "dcnn_stochastic_cifar10/"
 
-    - Run the code file "dnn_conv_train_HP.m": the neural network training will be started.
+- Run the code file "dnn_conv_train_HP.m": the neural network training will be started.
       
-        (Warning: The training will takes approximately 20 hours with a single Nvidia RTX A4000 GPU, and approximately 100 hours without GPUs.)
+    (Warning: The training will takes approximately 20 hours with a single Nvidia RTX A4000 GPU, and approximately 100 hours without GPUs.)
       
-        Key information during the training will be displayed in the command window.
+    Key information during the training will be displayed in the command window.
       
-        After the training finished, the cross-entropy and the recogniton accuracy during the training will be plotted.
+    After the training finished, the cross-entropy and the recogniton accuracy during the training will be plotted.
       
-        A ".mat" file will be generated which saves all the variables for the neural network setting, the croo-entropy and test accuracy during training, learned weights. 
+    A ".mat" file will be generated which saves all the variables for the neural network setting, the croo-entropy and test accuracy during training, learned weights. 
     
-    - Run the code file "dnn_conv_train_BS.m": the neural network training will be started.
+- Run the code file "dnn_conv_train_BS.m": the neural network training will be started.
       
-        (Warning: The training will takes approximately 20 hours with a single Nvidia RTX A4000 GPU, and approximately 100 hours without GPUs.)
+    (Warning: The training will takes approximately 20 hours with a single Nvidia RTX A4000 GPU, and approximately 100 hours without GPUs.)
       
-        Key information during the training will be displayed in the command window.
+    Key information during the training will be displayed in the command window.
       
-        After the training finished, the cross-entropy and the recogniton accuracy during the training will be plotted.
+    After the training finished, the cross-entropy and the recogniton accuracy during the training will be plotted.
       
-        A ".mat" file will be generated which saves all the variables for the neural network setting, the croo-entropy and test accuracy during training, learned weights. 
+    A ".mat" file will be generated which saves all the variables for the neural network setting, the croo-entropy and test accuracy during training, learned weights. 
     
-    - Other code files to post processing the learned neural network:
+- Other code files to post processing the learned neural network:
       
-        "inference.m": test different inference methods.
+    "inference.m": test different inference methods.
       
-        "train_results_comparison.m": compare training results for different setting or parameters.
+    "train_results_comparison.m": compare training results for different setting or parameters.
 
 ## Reference
-    1. Yang Li, et al., "Binary stochasticity enabled highly efficient neuromorphic deep learning achieves better-than-software accuracy", preprint in ArXiv, 
+1. Yang Li, et al., "Binary stochasticity enabled highly efficient neuromorphic deep learning achieves better-than-software accuracy", preprint in ArXiv, 
 https://doi.org/10.48550/arXiv.2304.12866
